@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import Script from 'next/script';
 import { AppBar, Container, IconButton, makeStyles, Toolbar, Typography, useScrollTrigger, useTheme } from '@material-ui/core';
 import Landing from '../src/Landing';
 import Skills from '../src/Skills';
@@ -62,6 +63,8 @@ export default function Index({ projects, setTheme }) {
 
   return (
     <div className={classes.root}>
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4792310339962078"
+     crossorigin="anonymous"></Script>
       <AppBar color={!trigger ? "transparent" : "inherit"} className={classes.appBar} position="fixed">
         <Toolbar>
           <Typography variant="h6" className={classes.root}>
